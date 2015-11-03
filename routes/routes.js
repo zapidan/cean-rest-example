@@ -18,7 +18,7 @@ var appRouter = function(app) {
       }
 
       res.send(result);
-    })
+    });
   });
 
   // GET

@@ -31,6 +31,7 @@ app.controller("MainController", function($scope, $http, $state, $stateParams) {
       for (var i = 0; i < result.length; i++) {
         $scope.items[result[i].id] = result[i];
       }
+      console.log(JSON.stringify($scope.items));
     })
     .error(function(error) {
       console.log(JSON.stringify(error));
@@ -48,6 +49,7 @@ app.controller("MainController", function($scope, $http, $state, $stateParams) {
     })
     .success(function(result) {
       $scope.inputForm = result[0];
+      console.log($scope.inputForm);
     })
     .error(function(error) {
       console.log(JSON.stringify(error));
