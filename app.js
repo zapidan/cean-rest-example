@@ -14,6 +14,6 @@ app.use(express.static(path.join(__dirname, "public")));
 
 var routes = require("./routes/routes.js")(app);
 
-var server = app.listen(3000, function() {
+var server = app.listen(config.node.port, function() {
   console.log("Listening on port %s...", server.address().port);
 });
