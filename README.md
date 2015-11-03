@@ -11,19 +11,22 @@ Before using this app, the following need to be installed:
 
 ### Setup
 After everything is installed there is a setup phase for the app to work, which consists on the following steps:
-1. Install dependencies:
+
+* Install dependencies:
+
 ```
 npm install
 ```
-2. Prepare Couchbase:
+
+* Prepare Couchbase
   * Create a new bucket called *restful-sample* using the Admin UI
 
   * Create an index from the command line using CBQ:
-    - Launch CBQ
+   Launch CBQ
     ```
     ./Applications/Couchbase Server.app/Contents/Resources/couchbase-core/bin/cbq
     ```
-    - Create an index:
+   Create an index:
    ```
    CREATE PRIMARY INDEX ON `restful-sample` USING GSI;
    ```
